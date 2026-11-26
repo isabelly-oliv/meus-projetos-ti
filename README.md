@@ -1,4 +1,3 @@
-# meus-projetos-ti
 ### Olá! Eu sou a Isabelly
 
 Concluinte do curso **Técnico em Informática** (Formatura em Dezembro/2026). Tenho experiência prática no desenvolvimento de sistemas desktop, aplicações web, bancos de dados relacionais e integração de software com hardware (IoT).
