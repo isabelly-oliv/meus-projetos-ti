@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo do Grão de Café</title>
+  <link rel="icon" href='https://img.icons8.com/?size=100&id=7hxTNGKKQMYI&format=png&color=000000' type="image/jpeg">
+  <link rel="stylesheet" href="jogo.css">
+
+</head>
+<body>
+  <h1>☕ Coletor de Grãos de Café ☕</h1>
+  <div id="scoreBoard">
+    Pontuação: <span id="score">0</span> | Tempo: <span id="timer">30</span>s
+  </div>
+  <div id="gameArea"></div>
+
+  <script>
+    const gameArea = document.getElementById('gameArea');
+    const scoreEl = document.getElementById('score');
+    const timerEl = document.getElementById('timer');
+
+    let score = 0;
+    let timeLeft = 30;
+    let gameInterval, timerInterval;
+
+    function randomPosition() {
+      const areaRect = gameArea.getBoundingClientRect();
+      const x = Math.random() * (gameArea.clientWidth - 40);
+      const y = Math.random() * (gameArea.clientHeight - 40);
+      return { x, y };
+    }
+
+    function createGrao() {
+      const grao = document.createElement('div');
+      grao.classList.add('grao');
+      const { x, y } = randomPosition();
+      grao.style.left = `${x}px`;
+      grao.style.top = `${y}px`;
+
+      grao.addEventListener('click', () => {
+        score++;
+        scoreEl.textContent = score;
+        grao.remove();
+      });
+
+      gameArea.appendChild(grao);
+
+      setTimeout(() => {
+        if (grao.parentElement) grao.remove();
+      }, 2000);
+    }
+
+    function startGame() {
+      gameInterval = setInterval(createGrao, 700);
+      timerInterval = setInterval(() => {
+        timeLeft--;
+        timerEl.textContent = timeLeft;
+        if (timeLeft <= 0) {
+          clearInterval(gameInterval);
+          clearInterval(timerInterval);
+          endGame();
+        }
+      }, 1000);
+    }
+
+    function endGame() {
+      alert('⏰ Tempo esgotado! Sua pontuação: ' + score);
+      score = 0;
+      timeLeft = 30;
+      scoreEl.textContent = score;
+      timerEl.textContent = timeLeft;
+      gameArea.innerHTML = '';
+      setTimeout(startGame, 1000);
+    }
+
+    startGame();
+  </script>
+</body>
+</html>
+
+</html>

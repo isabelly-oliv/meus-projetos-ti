@@ -1,0 +1,32 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f5f0e1;
+      text-align: center;
+      margin: 0;
+    }
+    h1 {
+      color: #6f4e37;
+      margin-top: 20px;
+    }
+    #scoreBoard {
+      font-size: 20px;
+      color: #3e2723;
+      margin: 10px;
+    }
+    #gameArea {
+      position: relative;
+      width: 90vw;
+      height: 70vh;
+      margin: auto;
+      border: 2px solid #6f4e37;
+      background-color: #fff8f0;
+      overflow: hidden;
+    }
+    .grao {
+      width: 40px;
+      height: 40px;
+      background-image: url('https://img.icons8.com/?size=100&id=7hxTNGKKQMYI&format=png&color=000000');
+      background-size: cover;
+      position: absolute;
+      cursor: pointer;
+    }
