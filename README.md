@@ -1,14 +1,16 @@
-### Olá! Eu sou a Isabelly
+# 🌱 Mudanças Climáticas e como Afetam o Café
 
-Concluinte do curso **Técnico em Informática** (Formatura em Dezembro/2026). Tenho experiência prática no desenvolvimento de sistemas desktop, aplicações web, bancos de dados relacionais e integração de software com hardware (IoT).
+Website informativo multi-páginas desenvolvido durante o curso Técnico em Informática, abordando os impactos das alterações climáticas na cafeicultura brasileira.
 
-#### 🛠️ Tecnologias e Ferramentas
-- **Linguagens:** Python, C#, JavaScript, C, SQL
-- **Web & Interfaces:** HTML5, CSS3, Bootstrap, CustomTkinter, Flask
-- **Banco de Dados & Hardware:** MySQL, ESP32, Sensores (DHT22)
+### 🔗 Acesse o projeto online
+👉 **[Clique aqui para visualizar o site](https://isabelly-oliv.github.io/meus-projetos-ti/)**
 
-#### 📌 Projetos em Destaque
-- **☕ [CaféAria — Estufa Inteligente (TCC)](https://github.com/SEU-USUARIO/cafearia-tcc):** Sistema completo de monitoramento e controle remoto para secagem de café, integrando ESP32, API em Flask, banco MySQL e dashboard em Python.
-- **🎙️ [Assistente Web por Comando de Voz](https://github.com/SEU-USUARIO/ia-voz-web):** Aplicação web interativa que altera cores, fontes e estilos da página em tempo real usando a Web Speech API.
-- **🌱 [Portal Mudanças Climáticas e o Café](https://github.com/SEU-USUARIO/cafe-clima-web):** Website informativo sobre os impactos climáticos na cafeicultura, desenvolvido com HTML5 e CSS3.
-- **💻 [Sistemas em C# e C](https://github.com/SEU-USUARIO/projetos-academicos):** Projetos de lógica de programação, sistemas com banco de dados em C# e algoritmos em C desenvolvidos ao longo do curso.
+### ✨ Funcionalidades e Páginas
+- **Página Inicial:** Contextualização sobre mudanças climáticas, galeria interativa e vídeos informativos.
+- **Sobre Nós & Contato:** Páginas estruturadas com estilização própria e formulário interativo.
+- **Mini-Jogo:** Seção interativa integrada ao portal.
+
+### 🛠️ Tecnologias Utilizadas
+- HTML5
+- CSS3
+- JavaScript
